@@ -27,8 +27,6 @@ module ApplicationHelperPatch
             case prefix
             when 'document'
               owner = Document.visible.find_by_title(title)
-            when 'issue'
-              owner = Issue.visible.find_by_title(title)
             end
           end
           unless owner.nil?
